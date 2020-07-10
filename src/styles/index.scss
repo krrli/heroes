@@ -1,17 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap");
+
+
 $body-color: black;
 $background-color: #00B1BF;
+
+// see: https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
 
 .courses-page{
   //margin: 2px;  
   font-family: 'Fira Sans', sans-serif;
   color: $body-color;
-  background-color: $background-color;
-  font-family: 'Fira Sans', sans-serif;
+  background-color: $background-color;  
 }
 
 h1{
+  height: 132px;
+  width: 434px;
+  color: #000000;
+  font-family: "Fira Sans";
   font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 66px;
+  padding-bottom: 15px;
 }
+
 
 .row {
   display: flex;
@@ -24,11 +37,13 @@ h1{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  // shorthand flex-grow, flex-shrink, flex-basis
   flex: 1;  
 }
 
 .course-column{
-  padding-left: 299px;
+  padding-left: 31%;
+  //padding-left: 10px;
 }
 
 .course-data-first {
@@ -39,16 +54,110 @@ h1{
   padding-left: 5px;
 }
 
+.date{
+  height: 36px;
+  width: 123px;
+  color: #000000;
+  font-family: "Fira Sans";
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.month{
+  height: 36px;
+  width: 84px;
+  color: #000000;
+  font-family: "Fira Sans";
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 36px;
+  
+}
+
 .course-data-second{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 2;
   padding-left: 107px;
+  position: relative;
+  bottom: 70px;
 }
 
-button{
-  background-color: fuchsia;
+.course-institute{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.course-time-place{
+  font-size: 18px;
+}
+
+button{  
+  box-sizing: border-box;
+  height: 52px;
+  width: 269px;
+  border: 2px solid #000000; 
+  background-color: $background-color;  
+}
+
+.btn-overview-text{
+  height: 24px;
+  width: 224px;
+  color: #000000;
+  font-family: "Fira Sans";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  background-color: $background-color;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-signup{
+  height: 26px;
+  width: 83px;
+  color: #000000;
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 26px;
+  //text-align: right;
+}
+
+.btn-signup-text{
+  height: 26px;
+  width: 83px;
+  color: #000000;
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: right;
+}
+
+image{
+  max-width:100%;
+  max-height:100%;
 }
 
 
+@media screen and (max-width: 400px){
+  .course-column {    
+    flex: 1;    
+    //padding-left: 31%;
+    padding-left: 5px;
+  }
+  
+  .column{
+    flex: 2;    
+  }
+
+}
