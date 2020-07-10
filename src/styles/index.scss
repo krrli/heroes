@@ -1,6 +1,54 @@
-$body-color: slateblue;
+$body-color: black;
+$background-color: #00B1BF;
 
-body {
+.courses-page{
+  //margin: 2px;  
+  font-family: 'Fira Sans', sans-serif;
   color: $body-color;
-  font-family: sans-serif;
+  background-color: $background-color;
+  font-family: 'Fira Sans', sans-serif;
 }
+
+h1{
+  font-size: 46px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;  
+}
+
+.course-column{
+  padding-left: 299px;
+}
+
+.course-data-first {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  padding-left: 5px;
+}
+
+.course-data-second{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  padding-left: 107px;
+}
+
+button{
+  background-color: fuchsia;
+}
+
+
