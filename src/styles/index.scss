@@ -3,12 +3,10 @@
 
 $body-color: black;
 $background-color: #00B1BF;
-
-// see: https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
+$font-family: "Fira Sans";
 
 .courses-page{
-  //margin: 2px;  
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $font-family, sans-serif;
   color: $body-color;
   background-color: $background-color;  
 }
@@ -16,13 +14,12 @@ $background-color: #00B1BF;
 h1{
   height: 132px;
   width: 434px;
-  color: #000000;
-  font-family: "Fira Sans";
   font-size: 46px;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 66px;
-  padding-bottom: 15px;
+  padding-top: 59px;
+  padding-bottom: 52px;
 }
 
 
@@ -37,13 +34,19 @@ h1{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  // shorthand flex-grow, flex-shrink, flex-basis
+  // shorthand for flex-grow, flex-shrink, flex-basis
   flex: 1;  
 }
 
 .course-column{
-  padding-left: 31%;
+  padding-left: 31%;  
   //padding-left: 10px;
+
+}
+
+.signup{
+  padding-top: 18px;
+  padding-bottom: 34px;
 }
 
 .course-data-first {
@@ -54,26 +57,34 @@ h1{
   padding-left: 5px;
 }
 
+.course-data-button{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 90px;
+}
+
 .date{
   height: 36px;
   width: 123px;
-  color: #000000;
-  font-family: "Fira Sans";
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 36px;
+  padding-left: 5px;
 }
 
 .month{
   height: 36px;
   width: 84px;
-  color: #000000;
-  font-family: "Fira Sans";
   font-size: 36px;
   letter-spacing: 0;
   line-height: 36px;
-  
+  padding-left: 14px;
+  padding-top: 7px;
 }
 
 .course-data-second{
@@ -83,16 +94,22 @@ h1{
   flex: 2;
   padding-left: 107px;
   position: relative;
-  bottom: 70px;
+  bottom: 77px;
 }
 
 .course-institute{
   font-size: 26px;
   font-weight: bold;
+  line-height: 34px;
 }
 
 .course-time-place{
   font-size: 18px;
+  height: 36px;
+  width: 286px;
+  font-family: $font-family;
+  letter-spacing: 0;
+  line-height: 36px;
 }
 
 button{  
@@ -100,14 +117,13 @@ button{
   height: 52px;
   width: 269px;
   border: 2px solid #000000; 
-  background-color: $background-color;  
+  background-color: $background-color;        
 }
 
 .btn-overview-text{
   height: 24px;
-  width: 224px;
-  color: #000000;
-  font-family: "Fira Sans";
+  width: 224px;  
+  font-family: $font-family;
   font-size: 20px;
   letter-spacing: 0;
   line-height: 24px;
@@ -123,7 +139,7 @@ a{
   height: 26px;
   width: 83px;
   color: #000000;
-  font-family: "Fira Sans";
+  font-family: $font-family;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
@@ -135,13 +151,20 @@ a{
   height: 26px;
   width: 83px;
   color: #000000;
-  font-family: "Fira Sans";
+  font-family: $font-family;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 26px;
   text-align: right;
 }
+
+.arrow-right{
+  vertical-align: middle; 
+  width: 28px;
+  height: 20px;
+}
+
 
 image{
   max-width:100%;
