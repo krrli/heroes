@@ -9,8 +9,7 @@ $font-size-small: 26px;
 
 body{
   font-family: $font-family, sans-serif;
-  color: $body-color;
-  //background-color: $background-color;  
+  color: $body-color;  
 }
 
 h1{
@@ -49,8 +48,7 @@ h1{
 
 .course-column{
   padding-left: 31%;  
-  background-color: $background-color;  
-  //padding-left: 10px;
+  background-color: $background-color;    
 }
 
 .signup{
@@ -172,7 +170,6 @@ a{
   font-weight: bold;
   letter-spacing: 0;
   line-height: 26px;
-  //text-align: right;
 }
 
 .btn-signup-text{
@@ -213,7 +210,6 @@ image{
 @media screen and (max-width: $max-width-small){
   .course-column {    
     flex: 1;    
-    //padding-left: 31%;
     padding-left: 15px;
   }
   
